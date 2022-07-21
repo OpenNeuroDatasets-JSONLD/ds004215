@@ -1,4 +1,4 @@
-# The National Institute of Mental Health (NIMH) Research Volunteer (RV) Data Set
+# The National Institute of Mental Health (NIMH) Intramural Healthy Volunteer Dataset
 
 A comprehensive dataset characterizing healthy research volunteers in terms of clinical assessments, mood-related psychometrics, cognitive function neuropsychological tests, structural and functional magnetic resonance imaging (MRI), along with diffusion tensor imaging (DTI), and a comprehensive magnetoencephalography battery (MEG).
 
@@ -114,52 +114,6 @@ We used the `heudiconv` tool to convert MRI DICOM files to BIDS-standard files w
 
 Each participant received either the ADNI3 or the ABCD protocol, not both, during their MRI/MEG visit.  T1w scans with acquisition label `fspgr` are ADNI3 protocol sequence and scans with `mprage` acquisition labels are ABCD protocol sequence.
 
-### OpenNeuro BIDS File/Folder Tree
+### Protocol PDFs
 
-Below is a BIDS-compliant file/folder tree as it appears for subjects on OpenNeuro.
-
-```shell
-sub-ON<subject>
-    └── ses-01
-        ├── anat
-        │   └── sub-ON<subject>_ses-01_acq-<desc>_run-<index>_<suffix>.<json|nii.gz>
-        ├── asl
-        │   └── sub-ON<subject>_ses-01_run-<index>_asl.<json|nii.gz>
-        ├── dwi
-        │   └── sub-ON<subject>_ses-01_run-<index>_dwi.<bvec|bval|json|nii.gz>
-        ├── fmap
-        │   └── sub-ON<subject>_ses-01_acq-<desc>_dir-<direction>_run-<index>_epi.<bvec|bval|json|nii.gz>
-        ├── func
-        │   └── sub-ON<subject>_ses-01_task-<taskname>_run-<index>_<suffix>.<json|nii.gz>
-        ├── meg
-        │   ├── sub-ON<subject>_ses-01_task-<taskname>_run-01_<meg|coordsystem>.json
-        │   ├── sub-ON<subject>_ses-01_task-<taskname>_run-01_<channels|events>.tsv
-        │   └── sub-ON<subject>_ses-01_task-<taskname>_run-01_meg.ds
-        │       ├── BadChannels
-        │       ├── bad.segments
-        │       ├── ClassFile.cls
-        │       ├── MarkerFile.mrk
-        │       ├── params.dsc
-        │       ├── processing.cfg
-        │       ├── sub-ON<subject>_ses-01_task-<taskname>_run-01_meg.<extension>
-        │       └── sub-ON<subject>_ses-01_task-<taskname>_run-01.xml
-        └── sub-ON<subject>_ses-01_scans.<json|tsv>
-```
-
-Definitions:
-
-- `<subject>` = subject number
-- `<taskname>` = task name: `airpuff`, `artifact`, `gonogo`, `haririhammer`, `movie`, `oddball`, `sternberg`
-- `<desc>` = placeholder for acquisition label for a given suffix
-- `<direction>` = flipped, unflipped
-- `<index>` = run number/index
-- `<suffix>` = placeholder to indicate the scan type
-    - `T1w`: `<desc>` = `fspgr`, `mprage`, `fse`, `highreshippo`
-    - `T2w`: `<desc>` = `abcdcube`, `cube`, `frfse`
-    - `FLAIR`: `<desc>` = `adni2d`, `2d`, `3d`, `t2`
-    - `epi`: `<desc>` = `dwib1000`, `dwi`, `resting`
-    - `T2star`
-    - `bold`
-    - `meg`
-    - `asl`
-- `<extension>`: indicates meg data files' type = `acq`, `bak`, `hc`, `hist`, `infods`, `meg4`, `newds`, `res4`, `xml`
+GE MRI scanner protocol PDFs are located within the `sourcedata/` folder, named after their BIDS tree file names.  In the parameter called "Auto SCIC", if it is set to 2 then both "Orig" (original) and "SCIC" (GE’s proprietary Surface Coil Intensity Correction algorithm) images are created.  Therefore one PDF with an Auto SCIC setting of "2" represents two images in the dataset.
