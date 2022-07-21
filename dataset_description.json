@@ -25,7 +25,7 @@
         "Joyce Chung"
     ],
     "Acknowledgements": "We thank the NIMH Office of the Clinical Director, the outpatient behavioral health clinic and NMR center for providing support for the data collection. This work utilized the computational resources of the NIH HPC Biowulf cluster http://hpc.nih.gov. We thank Sil van der Woerd for graciously allowing us to use his film as a behavioral task. In addition, we thank the subjects who generously contributed their data to this project.",
-    "HowToAcknowledge": "Please cite this paper: The NIMH Healthy Research Volunteer Dataset: A comprehensive clinical, MRI, and MEG resource",
+    "HowToAcknowledge": "Please cite this paper: The NIMH Intramural Healthy Volunteer Dataset: A Comprehensive MEG, MRI, and Behavioral Resource",
     "Funding": [
         "ZICMH002889",
         "ZICMH002960",
