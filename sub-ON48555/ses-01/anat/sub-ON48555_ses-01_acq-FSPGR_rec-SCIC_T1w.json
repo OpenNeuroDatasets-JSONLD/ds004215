@@ -51,5 +51,22 @@
     "InPlanePhaseEncodingDirectionDICOM": "ROW",
     "ConversionSoftware": "dcm2niix",
     "ConversionSoftwareVersion": "v1.0.20211006",
-    "Dcm2bidsVersion": "2.1.6"
+    "Dcm2bidsVersion": "2.1.6",
+    "AnatomicalLandmarkCoordinates": {
+        "NAS": [
+            104.00026902366852,
+            219.0000056493044,
+            130.0000053755361
+        ],
+        "LPA": [
+            40.00010242128373,
+            145.000009151876,
+            96.0000164661944
+        ],
+        "RPA": [
+            157.00040923085749,
+            134.0000096725285,
+            98.00000689016164
+        ]
+    }
 }
