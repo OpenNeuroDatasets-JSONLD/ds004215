@@ -1,2 +1,5 @@
+1.0.1 2022-09-26
+  - Updating T1w JSON sidecars of subjects with `AnatomicalLandmarkCoordinates` field with MEG and MRI data associated with them.
+  - Adding saggital MPRAGE acquisition's protocol PDF to sourcedata directory.
 1.0.0 2022-07-21
   - Initial Release
