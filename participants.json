@@ -43,12 +43,12 @@
         "male": {
           "TermURL": "snomed:248153007",
           "Label": ""
-        },
-        "NaN": {
-          "TermURL": "nb:MissingValue",
-          "Label": ""
         }
-      }
+      },
+      "MissingValues": [
+        "n/a",
+        "nan"
+      ]
     }
   },
   "handedness": {
@@ -169,15 +169,9 @@
         "TermURL": "nb:Assessment",
         "Label": ""
       },
-      "Levels": {
-        "0": {
-          "TermURL": "nb:MissingValue",
-          "Label": ""
-        },
-        "1": {
-          "TermURL": NaN,
-          "Label": ""
-        }
+      "IsPartOf": {
+        "TermURL": "cogatlas:tsk_4a57abb949e35",
+        "Label": ""
       }
     }
   },
@@ -206,15 +200,9 @@
         "TermURL": "nb:Assessment",
         "Label": ""
       },
-      "Levels": {
-        "0": {
-          "TermURL": "nb:MissingValue",
-          "Label": ""
-        },
-        "1": {
-          "TermURL": NaN,
-          "Label": ""
-        }
+      "IsPartOf": {
+        "TermURL": "cogatlas:tsk_4a57abb949a41",
+        "Label": ""
       }
     }
   },
@@ -229,15 +217,9 @@
         "TermURL": "nb:Assessment",
         "Label": ""
       },
-      "Levels": {
-        "0": {
-          "TermURL": "nb:MissingValue",
-          "Label": ""
-        },
-        "1": {
-          "TermURL": NaN,
-          "Label": ""
-        }
+      "IsPartOf": {
+        "TermURL": "cogatlas:trm_529ce6ecb35f8",
+        "Label": ""
       }
     }
   },
