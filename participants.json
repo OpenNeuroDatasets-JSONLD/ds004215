@@ -20,7 +20,12 @@
       "Transformation": {
         "TermURL": "nb:float",
         "Label": "float data"
-      }
+      },
+      "MissingValues": [
+        "",
+        "n/a",
+        " "
+      ]
     }
   },
   "sex": {
@@ -47,7 +52,10 @@
       },
       "MissingValues": [
         "n/a",
-        "nan"
+        "nan",
+        "n/a",
+        "",
+        " "
       ]
     }
   },
