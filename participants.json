@@ -177,7 +177,7 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949e35",
+        "TermURL": "snomed:273843002",
         "Label": ""
       }
     }
@@ -201,16 +201,6 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
-    },
-    "Annotations": {
-      "IsAbout": {
-        "TermURL": "nb:Assessment",
-        "Label": ""
-      },
-      "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949a41",
-        "Label": ""
-      }
     }
   },
   "kbit2_vas": {
@@ -218,16 +208,6 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
-    },
-    "Annotations": {
-      "IsAbout": {
-        "TermURL": "nb:Assessment",
-        "Label": ""
-      },
-      "IsPartOf": {
-        "TermURL": "cogatlas:trm_529ce6ecb35f8",
-        "Label": ""
-      }
     }
   },
   "health_history_questions": {
