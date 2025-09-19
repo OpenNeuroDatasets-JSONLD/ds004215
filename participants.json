@@ -6,7 +6,7 @@
         "TermURL": "nb:ParticipantID",
         "Label": ""
       },
-      "Identifies": "participant"
+      "VariableType": "Identifier"
     }
   },
   "age": {
@@ -17,15 +17,16 @@
         "TermURL": "nb:Age",
         "Label": ""
       },
-      "Transformation": {
-        "TermURL": "nb:FromFloat",
-        "Label": "float data"
-      },
       "MissingValues": [
         "",
         "n/a",
         " "
-      ]
+      ],
+      "Format": {
+        "TermURL": "nb:FromFloat",
+        "Label": "float data"
+      },
+      "VariableType": "Continuous"
     }
   },
   "sex": {
@@ -55,7 +56,8 @@
         " ",
         "nan",
         "n/a"
-      ]
+      ],
+      "VariableType": "Categorical"
     }
   },
   "handedness": {
@@ -179,7 +181,8 @@
       "IsPartOf": {
         "TermURL": "snomed:273843002",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "whodas": {
